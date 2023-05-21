@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Anomaly Detection Project</title>
+ Well be updating readme file soon!
 </head>
 <body>
   <h1>Anomaly Detection Project</h1>
