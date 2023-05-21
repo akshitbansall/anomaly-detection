@@ -2,7 +2,7 @@
 <html>
 <head>
  Anomalous Score >= 3
- We Will be updating readme file soon!
+(We Will be updating readme file soon!)
 </head>
 <body>
   <h1>Anomaly Detection Project</h1>
