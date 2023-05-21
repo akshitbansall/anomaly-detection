@@ -11,7 +11,7 @@
     <li><a href="#introduction">Introduction</a></li>
     <li><a href="#installation">Installation</a></li>
     <li><a href="#usage">Usage</a></li>
-    <li><a href="#results">Results</a></li>
+    <li><a href="#model-deployment">Model Deployment</a></li>
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
   </ul>
@@ -20,8 +20,8 @@
   <p>
     Anomaly detection plays a crucial role in identifying and mitigating potential security threats.
     This project focuses on detecting anomalies in user login behavior, which can help identify suspicious activities such as unauthorized access attempts or compromised user accounts.
-    The project utilizes machine learning techniques to train an anomaly detection model based on a labeled dataset.
-    The model is then used to classify new login events as normal or anomalous based on their features.
+    The project utilizes machine learning techniques, specifically XGBoost, to train an anomaly detection model based on a labeled dataset.
+    The trained model can then be used to classify new login events as normal or anomalous based on their features.
   </p>
 
   <h2 id="installation">Installation</h2>
@@ -62,30 +62,51 @@
     <li>
       Train the anomaly detection model:
       <p>
-        Use the provided training script or Jupyter Notebook to train the anomaly detection model on the prepared dataset.
-        This step involves feature engineering, model selection, hyperparameter tuning, and model evaluation.
+        Use the provided code or Jupyter Notebook to train the XGBoost model on the prepared dataset.
+        This step involves data preprocessing, feature engineering, model training, and evaluation.
       </p>
     </li>
     <li>
       Test the model:
       <p>
-        Evaluate the trained model's performance on a separate testing dataset.
-        Measure metrics such as precision, recall, and F1-score to assess the model's ability to correctly identify anomalies.
+        Evaluate the trained XGBoost model's performance on a separate testing dataset.
+        Measure metrics such as mean squared error (MSE), root mean squared error (RMSE), and mean absolute error (MAE) to assess the model's accuracy.
       </p>
     </li>
     <li>
-      Run the anomaly detection system:
+      Save the trained model:
       <p>
-        Once the model is trained and tested, deploy the anomaly detection system in a production environment.
-        This may involve integrating the system with a real-time data pipeline or setting up periodic batch processing.
+        Save the trained model to a file, such as a pickle file (.pkl), for future use and deployment.
+        This file will be used to load the trained model during the anomaly detection process.
       </p>
     </li>
   </ol>
 
-  <h2 id="results">Results</h2>
+  <h2 id="model-deployment">Model Deployment</h2>
   <p>
-    The results of the anomaly detection system can be summarized and presented in various formats.
-    This may include performance metrics, visualizations, or insights gained from analyzing the detected anomalies.
+    To deploy the anomaly detection system with FastAPI, follow these steps:
+    <ol>
+      <li>
+        Install FastAPI and additional dependencies:
+        <pre><code>pip install fastapi uvicorn</code></pre>
+      </li>
+      <li>
+        Open the terminal and navigate to the project folder:
+        <pre><code>cd anomaly-detection-project</code></pre>
+      </li>
+      <li>
+        Start the FastAPI server:
+        <pre><code>uvicorn fast_api:app --reload</code></pre>
+      </li>
+      <li>
+        Access the API endpoints:
+        <p>
+          The API endpoints can be accessed using the provided URLs.
+          Make requests to the appropriate endpoints to send new login events and receive anomaly detection results.
+          Refer to the API documentation for detailed information on the available endpoints and request/response formats.
+        </p>
+      </li>
+    </ol>
   </p>
 
   <h2 id="contributing">Contributing</h2>
