@@ -84,7 +84,7 @@ with open("regressor_model.pkl", 'wb') as file:
   <ol start="4">
     <li>Run the FastAPI server:</li>
   </ol>
-  <pre><code>uvicorn main:app --reload
+  <pre><code>uvicorn fast_api:app --reload
 </code></pre>
   <ol start="5">
     <li>Open your web browser and visit <a href="http://localhost:8000">http://localhost:8000</a> to ensure the server is running. You should see a "Hello, World!" message.</li>
