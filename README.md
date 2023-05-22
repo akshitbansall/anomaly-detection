@@ -91,8 +91,8 @@ with open("regressor_model.pkl", 'wb') as file:
   </ol>
   <h3>Detecting Anomalies</h3>
   <ol>
-    <li>To detect anomalies, make a POST request to the <code>/detect</code> endpoint using an API client like cURL or Postman.</li>
-    <li>Set the request URL to <code>http://localhost:8000/detect</code> and provide the following JSON payload:</li>
+    <li>To detect anomalies, make a POST request to the <code>/docs</code> endpoint using an API client like cURL or Postman.</li>
+    <li>Set the request URL to <code>http://localhost:8000/docs</code> and provide the following JSON payload:</li>
   </ol>
   <pre><code>{
     "Country": &lt;country_value&gt;,
