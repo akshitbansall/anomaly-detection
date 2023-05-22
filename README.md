@@ -4,7 +4,7 @@
 </head>
 <body>
   <h1>Anomaly Detection Project</h1>
-  <p>Anomalous Score >= 3 (We will be updating the readme file soon!)</p>
+  <h2>Anomalous Score >= 3<h2>
   <h2>Table of Contents</h2>
   <ul>
     <li><a href="#introduction">Introduction</a></li>
