@@ -5,7 +5,7 @@
 <body>
   <h1>Anomaly Detection Project</h1>
   
-  <h2>Anomalous Score >= 3</h2>
+  <h2>Anomalous Score >= 2</h2>
    <p>(The result of the mmodel gives the Range from 1-10, so the if the scores is >=3, its a anomalous record)</p>
    
     
@@ -110,7 +110,7 @@ with open("regressor_model.pkl", 'wb') as file:
   <ol start="3">
     <li>Replace the <code>&lt;value&gt;</code> placeholders with the corresponding feature values for anomaly detection.</li>
     <li>The API will respond with the predicted anomaly score for the provided data.</li>
-     <li> <h2>(The result of the mmodel gives the Range from 1-10, so the if the scores is >=3, its a anomalous record) Anomalous Score >= 3 </h2></li>
+     <li> <h2>(The result of the mmodel gives the Range from 1-10, so the if the scores is >=3, its a anomalous record) Anomalous Score >= 2 </h2></li>
   </ol>
   <h2 id="algorithms">Algorithms Used</h2>
   <p>The following algorithms are used in this project:</p>
